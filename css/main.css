@@ -12,24 +12,29 @@
     height: 100%;
     width: 100%;
     overflow-y: hidden;
+    font-family: 'Quicksand', 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
+}
+
+
+
+.under-construction img {
+    max-width: 70%;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+@media only screen and (min-width: 1024px) {
+    .under-construction img {
+        max-width: 70%;
+        padding: 5vw 10vw 5vw 10vw;
+    }
 }
 
 .under-construction img {
-    max-width: 90%;
+    font-family: 'Barlow' !important;
 }
 
-#archive-banner {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    /* height: 5vh; */
-    z-index: 100000;
-    background-color: #ffc696;
-    font-size: 120%;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    transition-duration: 1s;
-}
+
 
 /* *****************
  * * GLOBAL STYLES *
@@ -37,8 +42,7 @@
 
 * {
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
-    /* overflow-y: visible; */
-    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 section {
@@ -52,7 +56,6 @@ footer {
     bottom: 0;
     width: 100%;
     height: 3vh;
-    padding-top: 0.5vh;
     box-shadow: 0 50vh 0 50vh #ef6c00;
 }
 
@@ -67,6 +70,11 @@ footer {
 .right-align {
     float: right;
     text-align: right;
+}
+
+#schedule,
+#prizes {
+    /* overflow-x: scroll; */
 }
 
 @media only screen and (min-width: 600px) {
@@ -104,7 +112,7 @@ h4 {
     }
 
     .float-right-not-mobile {
-        padding-left: 10vw !important;
+        float: left !important;
     }
 
     h6 {
@@ -173,7 +181,6 @@ h4 {
     height: 55vh;
     width: 100vw;
     text-align: center;
-    overflow-y: hidden;
 }
 
 
@@ -188,8 +195,13 @@ h4 {
 }
 
 #link-buttons {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    /* margin-left: 15vw;
+    margin-right: 15vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    /* border: 3px solid green; */
 }
 
 #link-buttons .link-btn {
@@ -204,13 +216,23 @@ h4 {
     transform: scale(1.1);
 }
 
-.media-btn {
-    height: 100%;
-}
 
 @media only screen and (orientation: portrait) and (max-width: 800px) {
     .mobile-width-fix {
         max-width: 15vw;
+    }
+
+    #link-buttons {
+        height: 5vh;
+
+    }
+
+    #link-buttons .link-btn {
+        font-size: 10vw;
+    }
+
+    .material-icons.spinner.mobileFix {
+        font-size: 64px;
     }
 }
 
@@ -351,15 +373,11 @@ h4 {
 }
 
 .restrict-sponsor-img {
-    max-width: 20vw;
+    max-width: 25vw;
 }
 
 .sponsor-img:hover {
     transform: scale(1.2);
-}
-
-.sponsor-header {
-    margin-top: 5vh;
 }
 
 /* ********
@@ -458,4 +476,180 @@ nav img {
     border: #0055ff;
     color: rgb(0, 34, 255);
 
+}
+
+.bannerArea {
+    margin-bottom: 5vw;
+}
+
+.infoArea {}
+
+.material-icons.spinner {
+    animation: spin-animation 5s infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+    font-size: 64px;
+}
+
+@keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+
+/* Wheel's Styling and positioning */
+.car {
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carCombustionImg1 {
+    background-image: url(/img/car-old.png);
+    width: 46px;
+    height: 49px;
+    /* bottom: 71px; */
+    left: -570px;
+    transform: scaleX(-1);
+    animation: runCar linear 15s;
+}
+
+.carImg1 {
+    background-image: url(/img/car.png);
+    width: 46px;
+    height: 49px;
+    /* bottom: 71px; */
+    left: -570px;
+    margin-top: 20px;
+    animation: runCar linear 8s infinite;
+    animation-delay: 5s;
+}
+
+.carImg2 {
+    background-image: url(/img/car.png);
+    width: 46px;
+    height: 49px;
+    margin-top: 80px;
+    left: -440px;
+    animation: runCar linear 5s infinite;
+    animation-delay: 8s;
+}
+
+.coneImg {
+    background-image: url(/img/cone.png);
+    width: 46px;
+    height: 49px;
+    margin-top: 80px;
+    left: -100px;
+    animation: runCar ease-in 4s;
+    animation-delay: 30s;
+}
+
+.circuitImg {
+    background-image: url(/img/circuit-board.png);
+    width: 46px;
+    height: 49px;
+    margin-top: 30px;
+    left: -660px;
+    animation: runCar linear 10s infinite;
+    animation-delay: 20s;
+}
+
+.roverImg {
+    background-image: url(/img/rover.png);
+    width: 46px;
+    height: 49px;
+    margin-top: 30px;
+    left: -320px;
+    animation: runCar linear 6s infinite;
+    animation-delay: 20s;
+}
+
+.mustangImg {
+    background-image: url(/img/mustang.png);
+    width: 46px;
+    height: 49px;
+    margin-top: 60px;
+    left: -320px;
+    animation: runCar linear 3s;
+    animation-delay: 45s;
+}
+
+.roboticArmImg {
+    background-image: url(/img/robotic-arm.png);
+    width: 46px;
+    height: 49px;
+    margin-top: 100px;
+    left: -320px;
+    animation: runCar linear 10s;
+    animation-delay: 15s;
+}
+
+.VRImg {
+    background-image: url(/img/vr.png);
+    width: 46px;
+    height: 49px;
+    margin-top: 90px;
+    left: -320px;
+    animation: runCar linear 10s infinite;
+    transform: scaleX(-1);
+    animation-delay: 17s;
+}
+
+
+@keyframes runCar {
+    0% {
+        /* left: 0; */
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+.road {
+    opacity: .9;
+    width: 120vw;
+    height: 20vh;
+    min-height: 200px;
+    background: #888;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.2) 35%,
+            rgba(80, 80, 80, 0.2) 50%,
+            rgba(30, 30, 30, 0.4) 100%,
+            rgba(60, 60, 60, 0.5) 87%,
+            rgba(90, 90, 90, 0.5) 100%);
+    background-size: 19vw auto;
+    transform-origin: center top;
+    transform: rotateX(45deg) translate(-20vw);
+    animation: stripemove 5s linear infinite;
+}
+
+
+
+@keyframes stripemove {
+    to {
+        transform: rotateX(45deg) translate(0vw);
+    }
+}
+
+.stripe {
+    position: absolute;
+    opacity: 0.5;
+    top: 50%;
+    width: 120vw;
+    min-width: 60vw;
+    height: 5%;
+    background: repeating-linear-gradient(to right,
+            white,
+            white 8vw,
+            transparent 8vw,
+            transparent 20vw);
 }

@@ -40,16 +40,16 @@ $(document).ready(function () {
         $('#representativeWrapper').load("resources/representative.html");
     }
 
-    // $("#livesite").attr("aria-disabled", true);
-    // $("#livesite").append('<span id="disable"> (COMING SOON!)');
-    // document.getElementById("livesite").addEventListener('click', function (event) {
-    //     if (this.classList.contains('disabled')) {
-    //         event.preventDefault();
+    $("#livesite").attr("aria-disabled", true);
+    $("#livesite").append('<span id="disable"> (COMING SOON!)');
+    document.getElementById("livesite").addEventListener('click', function (event) {
+        if (this.classList.contains('disabled')) {
+            event.preventDefault();
             
-    //         console.warn("Live site is not enabled yet! Preventing redirect.");
-    //         alert("Hold on! The event has not started yet. Please revisit when the event has commenced. :)");
-    //     }
-    // });
+            console.warn("Live site is not enabled yet! Preventing redirect.");
+            alert("Hold on! The event has not started yet. Please revisit when the event has commenced. :)");
+        }
+    });
 
     
     document.getElementById("hackerSignup").addEventListener('click', function (event) {
@@ -81,62 +81,14 @@ $(document).ready(function () {
         }
     });
 
-    // Detect browser to load the correct svg
-    var bannerFile = '../img/banner-animated.svg'; //default (Chrome/Opera)
-    if (typeof InstallTrigger !== 'undefined')  { //Firefox 
-        console.log('Using Firefox');
-        bannerFile = '../img/banner-animated-firefox.svg';
-    }
-    else if (!!window.StyleMedia)  {// Edge
-        console.log('Using Edge');
-        bannerFile = '../img/banner-animated-edge.svg';
-    }
-    //Safari
-    var isSafari = (/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification)));
-    if(isSafari)
-        console.log('Using Safari');
-
-
-    // Animate logo movements
-
-    const logo = new Vivus('bannerLogo', {
-        file: bannerFile,
-        reverseStack: true,
-        onReady: function (bannerLogoVivus) {
-            bannerLogoVivus.play(2);
-            if(isSafari)
-                $('#bannerLogo').css('maxHeight', '0');
-            else
-                $('#bannerLogo2').hide();
-        }
-    });
-
-    if(isSafari)
-    setTimeout(function() {
-        const logo2 = new Vivus('bannerLogo2', {
-            file: bannerFile,
-            reverseStack: true,
-            onReady: function (bannerLogoVivus2) {
-                bannerLogoVivus2.play(2);
-            }
-        });
-    }, 1000);
-    
-
     // Animate navbar when scrolled
     $(window).scroll(function () {
         // Change int to configure how many pixels must be scrolled before navbar
         // appears
         if ($(this).scrollTop() > 100) {
             $('.navbar').fadeIn();
-            $('#archive-banner').css({
-                'margin-top': '6vh'
-            });
         } else {
             $('.navbar').fadeOut();
-            $('#archive-banner').css({
-                'margin-top': '0vh'
-            });
         }
     });
 

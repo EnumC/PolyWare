@@ -1,14 +1,20 @@
-# LaunchHacksSite
+# PolyWare 2022
 
-Website for LaunchHacks I, which took place in April 2019.
+Website for the 2022 Hardware Hackathon Hosted By IEEE-HKN California Polytechnic State University Chapter.
 
-Since LaunchHacks has completed, this website has been archived at https://launchhacks.bananiumlabs.com. We'd like to thank all of our wonderful sponsors, mentors, judges, participants, and team members who made LaunchHacks I awesome!
+This repo hosts only the site's static contents.
+
 
 ## Running locally
 
 To run locally, `npm i -g live-server` if you don't have it already, then run `live-server` in the project directory.
 
-## Coded by
+
+## Special Credits
+### IEEE-HKN Epsilon Phi Modifications
+ - [Eric Qian (EnumC)](https://github.com/EnumC)
+
+### Boilerplate Coded by
  - [Ben Cuan (dbqeo)](https://github.com/dbqeo)
  - [Eric Qian (EnumC)](https://github.com/EnumC)
  - [Akash Basu (Fujax)](https://github.com/Fujax)
