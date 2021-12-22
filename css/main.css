@@ -52,11 +52,17 @@ section {
 }
 
 footer {
-    background-color: #ef6c00;
+    /* background-color: darkgrey; */
     bottom: 0;
     width: 100%;
     height: 3vh;
-    box-shadow: 0 50vh 0 50vh #ef6c00;
+    position: absolute;
+    color: gray;
+    /* box-shadow: 0 50vh 0 50vh darkgrey; */
+}
+
+footer a {
+    color: gray;
 }
 
 .center-align {
@@ -657,4 +663,8 @@ nav img {
             white 8vw,
             transparent 8vw,
             transparent 20vw);
+}
+
+.animatedRoad {
+    overflow-x: hidden;
 }
