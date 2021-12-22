@@ -41,7 +41,9 @@ $(document).ready(function () {
     }
 
     $("#livesite").attr("aria-disabled", true);
-    $("#livesite").append('<span id="disable"> (COMING SOON!)');
+    $("#livesite").append('<span id="disable"> (More Info Coming Soon!)');
+    $("#hackerSignup").addClass('disabled');
+    $("#hackerSignup").attr("aria-disabled", true);
     document.getElementById("livesite").addEventListener('click', function (event) {
         if (this.classList.contains('disabled')) {
             event.preventDefault();
@@ -71,14 +73,16 @@ $(document).ready(function () {
         console.info("year: " + timeYear);
         console.info("month: " + timeMonth);
         console.info("day: " + timeDate);
-        if(timeYear != 2019) {
+        if(timeYear != 2022) {
             event.preventDefault();
-            alert("LaunchHacks I 2019 has ended! Please wait for LaunchHacks II to come online.");
+            $(this).addClass('disabled');
+            $(this).attr("aria-disabled", true);
+            alert("PolyWare 2022 has ended! See you at PolyWare 2023!");
         }
-        else if(timeMonth > 4 || timeDate > 20) {
-            event.preventDefault();
-            alert("Priority registration deadline has passed. Please email contact@launchhacks.tech to sign up!");
-        }
+        // else if(timeMonth > 4 || timeDate > 20) {
+        //     event.preventDefault();
+        //     alert("");
+        // }
     });
 
     // Animate navbar when scrolled

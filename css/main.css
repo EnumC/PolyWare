@@ -475,6 +475,11 @@ nav img {
     background: #ffffff;
     border: #0055ff;
     color: rgb(0, 34, 255);
+}
+
+.btn-gudbutton.disabled {
+    background: darkgrey;
+    border: grey;
 
 }
 
