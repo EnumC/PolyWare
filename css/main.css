@@ -516,7 +516,7 @@ nav img {
     width: 46px;
     height: 49px;
     /* bottom: 71px; */
-    left: -570px;
+    left: -100px;
     transform: scaleX(-1);
     animation: runCar linear 15s;
 }
