@@ -205,7 +205,7 @@ h4 {
 }
 
 #link-buttons .link-btn {
-    font-size: 5vw;
+    font-size: min(5vw, 5vh);
     color: rgb(37, 37, 37);
     -webkit-transition-duration: 0.4s;
     /* Safari */
