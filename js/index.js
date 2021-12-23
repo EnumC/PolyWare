@@ -41,7 +41,7 @@ $(document).ready(function () {
     }
 
     $("#livesite").attr("aria-disabled", true);
-    $("#livesite").append('<span id="disable"> (More Info Coming Soon!)');
+    $("#livesite").append('<span id="disable"> (More Event Info Will Be Displayed Below Shortly)');
     $("#hackerSignup").addClass('disabled');
     $("#hackerSignup").attr("aria-disabled", true);
     document.getElementById("livesite").addEventListener('click', function (event) {

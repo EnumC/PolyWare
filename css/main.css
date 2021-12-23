@@ -43,6 +43,9 @@
 * {
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
     overflow-y: visible;
+    /* background-color: rgb(32, 32, 32); */
+    /* background-color: #19082E; */
+    color: white;
 }
 
 section {
@@ -70,7 +73,7 @@ footer a {
 }
 
 .secondary {
-    background: rgb(223, 240, 253);
+    color: #38DEE0;
 }
 
 .right-align {
@@ -251,7 +254,7 @@ h4 {
 }
 
 #bannerButton a {
-    color: #0091FA !important;
+    color: #1057D1 !important;
     width: auto;
 }
 
@@ -269,11 +272,15 @@ h4 {
 }
 
 .banner-text-primary {
-    color: #0091FA;
+    color: #1057D1;
 }
 
 .banner-text-secondary {
-    color: #0066B1;
+    color: #262757;
+}
+
+.banner-text-lime {
+    color: #6DDB3E;
 }
 
 @keyframes fadein {
@@ -334,14 +341,14 @@ h4 {
     background: transparent;
     font-style: oblique;
     text-shadow: #bfceff 1px 1px 0;
-    color: rgb(1, 124, 212);
+    color: #38DEE0;
 }
 
 ::-moz-selection {
     background: transparent;
     font-style: oblique;
     text-shadow: #bfceff 1px 1px 0;
-    color: rgb(1, 124, 212);
+    color: #38DEE0;
 }
 
 /* *******
@@ -362,7 +369,7 @@ h4 {
 
 .card-header:hover {
     font-size: 2.7vh;
-    color: #0066B1;
+    color: #1057D1;
 }
 
 /* ************
@@ -479,8 +486,8 @@ nav img {
 
 .btn-gudbutton:hover {
     background: #ffffff;
-    border: #0055ff;
-    color: rgb(0, 34, 255);
+    border: #262757;
+    color: #1057D1;
 }
 
 .btn-gudbutton.disabled {
@@ -489,17 +496,32 @@ nav img {
 
 }
 
-.bannerArea {
-    margin-bottom: 5vw;
+body {
+    background-color: #19082E;
 }
 
-.infoArea {}
+.bannerArea {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    /* background-color: #19082E; */
+    width: 100%;
+    max-width: 100%;
+}
+
+.infoArea {
+    /* background-color: #19082E; */
+}
+
+.roadBG {
+    /* background-color: #262757; */
+}
 
 .material-icons.spinner {
     animation: spin-animation 5s infinite;
     animation-timing-function: linear;
     display: inline-block;
     font-size: 64px;
+    /* color: #6DDB3E; */
 }
 
 @keyframes spin-animation {
