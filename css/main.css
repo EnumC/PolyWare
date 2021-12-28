@@ -694,3 +694,7 @@ body {
 div.card {
     background-color: transparent;
 }
+
+a.nav-link {
+    color:white;
+}
