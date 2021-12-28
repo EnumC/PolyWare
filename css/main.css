@@ -1,7 +1,7 @@
 /*
 ###############################################################
 # Created by Ben Cuan, Eric Qian, Akash Basu, Vikram Peddinti #
-#                      LaunchHacks Site                       #
+#                      PolyWare Site                       #
 ###############################################################
 */
 
@@ -59,7 +59,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 3vh;
-    position: absolute;
+    /* position: absolute; */
     color: gray;
     /* box-shadow: 0 50vh 0 50vh darkgrey; */
 }
@@ -169,11 +169,11 @@ h4 {
     padding-top: 0;
 
     /* Background image - tinting adopted from https://css-tricks.com/tinted-images-multiple-backgrounds/*/
-    background:
+    /* background:
         linear-gradient(rgba(255, 255, 255, 0.25),
             rgba(255, 255, 255, 0.25)),
 
-        url('../img/banner-background.jpg');
+        url('../img/banner-background.jpg'); */
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -355,7 +355,7 @@ h4 {
  * * FAQ *
  * ******* */
 .card-header {
-    background-color: white;
+    /* background-color: white; */
     border-bottom: none;
     font-size: 2.5vh;
     -webkit-transition-duration: 0.4s;
@@ -689,4 +689,8 @@ body {
 
 .animatedRoad {
     overflow-x: hidden;
+}
+
+div.card {
+    background-color: transparent;
 }

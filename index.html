@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
         <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" crossorigin="anonymous"></script>
         <link href="css/main.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="img/logo-no-shadow.png">
+        <link rel="icon" type="image/png" href="img/polyware_square.png">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/index.js"></script>
@@ -21,7 +21,52 @@
     </head>
 
     <body>
-        <div class="under-construction animatedRoad">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="display:none;">
+        
+            <a class="navbar-brand" href="#banner">
+                <img src="./img/polyware_square.png">PolyWare I</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="nav justify-content-center ml-auto ">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sponsor">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prizes">Prizes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#judges">Judges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#representatives">Representatives</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section id="banner"><div class="under-construction animatedRoad">
             <div class="container bannerArea">
                 <!-- <img src="img/banner.png"> -->
                 <span class="material-icons spinner mobileFix">
@@ -38,16 +83,16 @@
                 <div class="car mustangImg"></div>
                 <div class="car roboticArmImg"></div>
                 <div class="car VRImg"></div>
-            
+        
             </div>
             <div class="roadBG">
                 <div class="road">
                     <div class="stripe"></div>
                 </div>
             </div>
-            
-            
-
+        
+        
+        
             <div class="container-sm infoArea">
                 <div class="row" id="link-buttons">
                     <div class="col-sm-1 mobile-width-fix">
@@ -72,9 +117,10 @@
                         </a>
                     </div>
                 </div>
-
+        
                 <br />
-                <h1 class="banner-text-lime" style="display:inline-block;">PolyWare 2022</h1> <h1 style="display:inline-block;padding-left:10px;">Is Coming Soon</h1>
+                <h1 class="banner-text-lime" style="display:inline-block;">PolyWare 2022</h1>
+                <h1 style="display:inline-block;padding-left:10px;">Is Coming Soon</h1>
                 <p class="secondary">Hosted By the IEEE-HKN EP chapter of California Polytechnic State University</p>
                 <p>Pre-Register Now And Apply Early For The 2022 Season!</p>
                 <div id="apply">
@@ -83,26 +129,84 @@
                             Apply Now
                         </a>
                         <div id="livesite"></div>
-                        <!-- <a class="btn btn-gudbutton" href="https://launchhacks.tech/mentor" target="_blank">
-                                                Mentor Sign Up
-                                            </a> -->
+                        <!-- <a class="btn btn-gudbutton" href="https://PolyWare.tech/mentor" target="_blank">
+                                                        Mentor Sign Up
+                                                    </a> -->
                         <h5></h5>
                         <!-- <a class="btn btn-gudbutton nav-link" href="#additional">
-                                                Additional Resources
-                                            </a> -->
+                                                        Additional Resources
+                                                    </a> -->
                     </div>
                 </div>
             </div>
+        
+            
+        </div></section>
 
-            <footer>
-                <a href="https://calpolyhkn.com/privacy">
-                    Privacy Policy
-                </a>
-                <a href="resources.html">
-                    Attributions
-                </a>
-            </footer>
-        </div>
+        <section id="about" class="secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <h2 class="text-center">About</h2>
+                        <p class="text-center">PolyWare is an annual hackathon that aims to foster new and impactful hardware developments
+                            that will benefit the world of tomorrow. 
+                            In addition to helping students improve their design and development skills, we
+                            also provide support to help students improve
+                            business and presentation skills- not just to pitch a successful project, but also to inspire the
+                            next generation of inventors, entrepreneurs, and leaders.
+                            Food, workshops, prizes, and swag will be provided to all participants for free.</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <section id="faq" class="container">
+            <!-- See faq.html -->
+        </section>
+        
+        <section id="sponsor" class="secondary">
+            <!-- See sponsor.html -->
+        </section>
+        
+        
+        <section id="schedule" class="container">
+            <!-- See schedule.html -->
+        </section>
+        
+        <section id="prizes" class="container">
+            <!-- See prizes.html -->
+        </section>
+        
+        <section id="judges" class="container">
+            <div class="container">
+                <div id="member">
+                    <!-- See member.html -->
+                </div>
+            </div>
+        </section>
+        
+        <section class="secondary">
+            <div class="col-sm">
+                <h2 class="text-center">Our Team</h2>
+            </div>
+            <div id="team">
+                <!-- See team.html -->
+            </div>
+        </section>
+        <section class="container" id="representatives">
+            <div id="representativeWrapper" class="container">
+                <!-- See representative.html -->
+            </div>
+        </section>
+        <footer>
+            <a href="https://calpolyhkn.com/privacy">
+                Privacy Policy
+            </a>
+            <a href="resources.html">
+                Attributions
+            </a>
+        </footer>
     </body>
 
     
